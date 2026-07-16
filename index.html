@@ -3,89 +3,244 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy - Calculator App</title>
+  <title>Privacy Policy | Calculator App</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary: #2563eb;
+      --primary-light: #dbeafe;
+      --background: #f5f7fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+    }
+
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      max-width: 800px;
-      margin: 40px auto;
+      font-family: "Inter", sans-serif;
+      background: var(--background);
+      color: var(--text);
+      line-height: 1.8;
+      padding: 50px 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 18px;
+      padding: 45px;
+      box-shadow:
+        0 10px 30px rgba(0,0,0,.06),
+        0 1px 3px rgba(0,0,0,.08);
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 12px;
+      color: var(--text);
+    }
+
+    .effective-date {
+      color: var(--muted);
+      font-size: .95rem;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      margin-top: 38px;
+      margin-bottom: 15px;
+      color: var(--primary);
+      border-left: 4px solid var(--primary);
+      padding-left: 12px;
+    }
+
+    p {
+      color: #374151;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      margin: 15px 0 20px 22px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .highlight {
+      background: #eff6ff;
+      border-left: 5px solid var(--primary);
+      padding: 18px;
+      border-radius: 10px;
+      margin: 25px 0;
+    }
+
+    .contact {
+      background: #f9fafb;
+      border: 1px solid var(--border);
+      border-radius: 12px;
       padding: 20px;
-      line-height: 1.7;
-      color: #333;
+      margin-top: 15px;
     }
-    h1, h2 {
-      color: #222;
-    }
+
     a {
-      color: #0066cc;
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 35px;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        padding: 28px;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      h2 {
+        font-size: 1.1rem;
+      }
     }
   </style>
 </head>
+
 <body>
 
-<h1>Privacy Policy</h1>
+<div class="container">
 
-<p><strong>Effective Date:</strong> July 16, 2026</p>
+  <div class="card">
 
-<p>
-Saravanakumar ("we", "our", or "us") operates the Calculator App.
-This Privacy Policy explains how the app handles your information.
-</p>
+    <div class="header">
+      <div class="badge">Calculator App</div>
+      <h1>Privacy Policy</h1>
+      <div class="effective-date">
+        Effective Date: July 16, 2026
+      </div>
+    </div>
 
-<h2>Information Collection and Use</h2>
+    <p>
+      This Privacy Policy describes how <strong>Calculator App</strong>,
+      developed by <strong>Saravanakumar</strong>, handles user information.
+      We are committed to protecting your privacy and providing a secure user
+      experience.
+    </p>
 
-<p>
-Calculator App does <strong>not collect, store, or share any personal information</strong>.
-The app works entirely on your device and does not require user registration or login.
-</p>
+    <div class="highlight">
+      <strong>Your Privacy Matters</strong><br><br>
+      Calculator App does <strong>not collect, store, process, or share any
+      personal information</strong>. All calculations are performed locally on
+      your device.
+    </div>
 
-<h2>Data Collection</h2>
+    <h2>Information Collection</h2>
 
-<p>The app does not collect:</p>
+    <p>
+      Calculator App does not require user registration, login, or any personal
+      information. The application functions completely offline.
+    </p>
 
-<ul>
-  <li>Personal information</li>
-  <li>Location data</li>
-  <li>Contacts</li>
-  <li>Photos or files</li>
-  <li>Device identifiers</li>
-  <li>Usage analytics</li>
-</ul>
+    <h2>Data We Do Not Collect</h2>
 
-<h2>Advertising</h2>
+    <ul>
+      <li>Personal Information</li>
+      <li>Email Address</li>
+      <li>Phone Number</li>
+      <li>Location Information</li>
+      <li>Photos or Media Files</li>
+      <li>Contacts</li>
+      <li>Device Identifiers</li>
+      <li>Analytics or Usage Data</li>
+      <li>Financial Information</li>
+    </ul>
 
-<p>
-Calculator App does not display advertisements and does not use any advertising SDKs.
-</p>
+    <h2>Advertising</h2>
 
-<h2>Third-Party Services</h2>
+    <p>
+      Calculator App does not display advertisements and does not include any
+      advertising SDKs such as Google AdMob.
+    </p>
 
-<p>
-This app does not use third-party services that collect user information.
-</p>
+    <h2>Third-Party Services</h2>
 
-<h2>Children's Privacy</h2>
+    <p>
+      This application does not use third-party services that collect, process,
+      or transmit user information.
+    </p>
 
-<p>
-Calculator App does not knowingly collect any personal information from children or adults.
-</p>
+    <h2>Children's Privacy</h2>
 
-<h2>Changes to This Privacy Policy</h2>
+    <p>
+      Calculator App is suitable for users of all ages and does not knowingly
+      collect personal information from children or adults.
+    </p>
 
-<p>
-We may update this Privacy Policy from time to time.
-Any changes will be posted on this page with an updated effective date.
-</p>
+    <h2>Policy Updates</h2>
 
-<h2>Contact Us</h2>
+    <p>
+      We may update this Privacy Policy from time to time. Any future changes
+      will be published on this page along with a revised effective date.
+    </p>
 
-<p>
-If you have any questions about this Privacy Policy, you can contact us at:
-</p>
+    <h2>Contact</h2>
 
-<p>
-Email: <strong>YOUR_EMAIL@example.com</strong>
-</p>
+    <div class="contact">
+      <strong>Developer</strong><br>
+      Saravanakumar<br><br>
+
+      <strong>Email</strong><br>
+      <a href="mailto:saravanaku7@gmail.com">
+        saravanaku7@gmail.com
+      </a>
+    </div>
+
+  </div>
+
+  <footer>
+    © 2026 Calculator App. All rights reserved.
+  </footer>
+
+</div>
 
 </body>
 </html>
